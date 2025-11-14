@@ -13,4 +13,4 @@ class UserSerializer(serializers.ModelSerializer):
             validated_data['email'],
             validated_data['password']
         )
-        return super().create(validated_data)
+        return user
